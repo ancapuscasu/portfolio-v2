@@ -7,27 +7,27 @@ function validateForm() {
     
     if(n == "" || n == null){
         document.getElementById('nameLabel').innerHTML = ('Please enter your name');
-        document.getElementById('name').style.borderColor = "red";
+        document.getElementById('name').style.borderColor = "#ff66c4";
         return false;
     }
        
   
     if(e == "" || e == null ){
           document.getElementById('emailLabel').innerHTML = ('Please enter your email');
-          document.getElementById('email').style.borderColor = "red";
+          document.getElementById('email').style.borderColor = "#ff66c4";
           return false;
       }
   
     if (!e.match(onlyEmail)) {
         document.getElementById('emailLabel').innerHTML = ('Please enter a valid email address');
-        document.getElementById('email').style.borderColor = "red";
+        document.getElementById('email').style.borderColor = "#ff66c4";
         return false;
     }
   
   
     if(m == "" || m == null){
         document.getElementById('messageLabel').innerHTML = ('Please enter your message');
-        document.getElementById('message').style.borderColor = "red";
+        document.getElementById('message').style.borderColor = "#ff66c4";
         return false;
     }
   

@@ -367,23 +367,13 @@ img.projects__title {
     align-content: center;
 }
 
-.contact-form__title-wrapper {
-    position: relative;
-    width: 100%;
-    height: 35vh;
-    margin-top: 3rem;
-}
 
 h2.contact-form__title {
-    position: absolute;
-    top: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     border-bottom: 2px solid;
     white-space: nowrap;
     font-family: "Cyrene", Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    margin: 5rem 0;
 }
 
 .row.contact-form {
@@ -395,10 +385,6 @@ h2.contact-form__title {
 
 }
 
-.contact-form__title-wrapper img {
-    width: 100%;
-    height: 100%;
-}
 
 #success-message {
     opacity: 0;
@@ -482,9 +468,9 @@ h2.contact-form__title {
   }
   
   .btn-mod.btn-border:hover, .btn-mod.btn-border:active, .btn-mod.btn-border:focus, .btn-mod.btn-border:active:focus {
-      color: #fff;
-      border-color: #000;
-      background: #000;
+      color: #2917eb;
+      border-color: #2917eb;
+      background: #5ce1e6;
       outline: none;
   }
   
