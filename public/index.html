@@ -26,14 +26,14 @@
 <!-- **************************************** INTRO SECTION **************************************** -->
       <div class="container-fluid introduction" id="About">
         <div class="row introduction m-0 pl-3 pr-3">
-          <div class="col introduction p-1">
+          <div class="col introduction one p-3">
             <div class="headshot__container">
               <div class="headshot__frame">
                 <img src="media/headshot.png" class="headshot" alt="Anca Puscasu Headshot" />
               </div>
             </div>
           </div>
-          <div class="col introduction p-2">
+          <div class="col introduction p-3">
             <div class="introduction__container">
               <h3 class="introduction__greeting">
                 HELLO -
@@ -41,7 +41,7 @@
               <h1 class="introduction__message">
                 I'm Anca Puscasu, full-stack web developer in the making with a background in psychology. That is to say, I got a social science degree and became a programmer.
               </h1>
-              <div class="row introduction__download m-0">
+              <div class="row introduction__download m-0 mt-3">
                 <a href="#" class="introduction__download-btn" download target="_blank">
                   Download my CV &#8595;
                 </a>
@@ -128,7 +128,7 @@
 <!-- **************************************** WORK SECTION **************************************** -->
 
       <section class="container-fluid portfolio p-0 m-0" id="Work">
-        <div class="row projects__title m-0">
+        <div class="row projects__title m-0 p-3">
           <img class="projects__title" src="media/projects-title.png" alt="Projects title">
         </div>
 
@@ -218,11 +218,11 @@
                 </div>
               </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <a class="carousel-control-prev" data-target="#carouselExampleIndicators" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <a class="carousel-control-next" data-target="#carouselExampleIndicators" role="button" data-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
@@ -247,8 +247,9 @@
     
               <div class="col-xs-12 ">
     
-                  <form id="contact-form" name="myForm" class="form" action="#" onsubmit="return validateForm()" method="POST" role="form">
-    
+                  <form id="contact-form" name="myForm" class="form" action="https://formsubmit.co/ancaa.puscasu@gmail.com" onsubmit="return validateForm()" method="POST" role="form">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_captcha" value="false">
                       <div class="form-group">
                           <label class="form-label" id="nameLabel" for="name"></label>
                           <input type="text" class="form-control" id="name" name="name" placeholder="Your name" tabindex="1">
@@ -256,7 +257,7 @@
     
                       <div class="form-group">
                           <label class="form-label" id="emailLabel" for="email"></label>
-                          <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" tabindex="2">
+                          <input type="email" novalidate  class="form-control" id="email" name="email" placeholder="Your Email" tabindex="2">
                       </div>
     
                       <div class="form-group">
@@ -294,10 +295,32 @@
       </div>
     </footer>
 
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="scripts/index.js"></script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyA0ISJJmmYmnNrjMA0rd9C-f9BbOvEyh0U",
+        authDomain: "anca-portfolio.firebaseapp.com",
+        projectId: "anca-portfolio",
+        storageBucket: "anca-portfolio.appspot.com",
+        messagingSenderId: "372827414816",
+        appId: "1:372827414816:web:b4db85338e7b79cca0f745",
+        measurementId: "G-6P6R5068Z7"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
   </body>
 </html>
