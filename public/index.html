@@ -94,6 +94,12 @@
             </div>
             <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12"> 
               <p>
+                <img class="icon" src="media/angularjs.svg" aria-hidden="true"></img>
+                Angular
+              </p>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12"> 
+              <p>
                 <img class="icon" src="media/nodejs.svg" aria-hidden="true"></img>
                 Node.js
               </p>
@@ -139,6 +145,8 @@
               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -183,13 +191,13 @@
                 <div class="project-name-container">
                   <div class="project-name-border1"> </div>
                   <div class="project-name-border2"> </div>
-                  <div class="project-name">myFlix</div>
+                  <div class="project-name">myFlix (React)</div>
                 </div>
                 <div class="row img__wrap__row m-0">
                   <div class="img__wrap">
-                    <img class="d-block img__img" src="media/myflix-react.png" alt="myFlix project">
+                    <img class="d-block img__img" src="media/myflix-react.png" alt="myFlix React project">
                     <p class="img__description row">
-                      myFlix is a full stack web application that utilizes the MERN stack. Users of this app are able to browse info on movies, genres and directors. After creating an account, users can change their user info as well as create and edit a list of their favorite movies.
+                      myFlix is a full stack web application that utilizes the MERN stack. Users of this app are able to get info on movies, genres and directors. After creating an account, users can edit their user info as well as create and edit a list of their favorite movies.
                     </p>
                   </div>
                 </div>
@@ -217,6 +225,48 @@
                   <a href="https://ancapuscasu.github.io/meet-up/" class="" target="_blank">Live Link</a>
                 </div>
               </div>
+
+              <div class="carousel-item">
+                <div class="project-name-container">
+                  <div class="project-name-border1"> </div>
+                  <div class="project-name-border2"> </div>
+                  <div class="project-name">Chat App</div>
+                </div>
+                <div class="row img__wrap__row m-0">
+                  <div class="img__wrap">
+                    <img class="d-block img__img" src="media/chatapp.gif" alt="Chat App project">
+                    <p class="img__description row">
+                      This is a mobile chat app built with Gifted Chat that allows users to chat with each other. Users can pick a background color, read and send messages, share images and their location. The app uses React Native Async Storage to allow users to view stored messages when offline. Firestore has been used to store data.
+                    </p>
+                  </div>
+                </div>
+                <div class="row portfolio-btn-container">
+                  <a href="https://github.com/ancapuscasu/ChatApp" class="" target="_blank">GitHub Repo </a>
+                </div>
+              </div>
+
+
+              <div class="carousel-item">
+                <div class="project-name-container">
+                  <div class="project-name-border1"> </div>
+                  <div class="project-name-border2"> </div>
+                  <div class="project-name">myFlix (Angular)</div>
+                </div>
+                <div class="row img__wrap__row m-0">
+                  <div class="img__wrap">
+                    <img class="d-block img__img" src="media/myflix-angular.png" alt="myFlix Angular project">
+                    <p class="img__description row">
+                      This frontend project was built using Angular, Angular Material and Typescript and works with the myFlix API. Users of this app are able to get info on movies, genres and directors. Users can edit their user details as well as create and edit a list of their favorite movies.
+                    </p>
+                  </div>
+                </div>
+                <div class="row portfolio-btn-container">
+                  <a href="https://github.com/ancapuscasu/myFlix-Angular-client" class="" target="_blank">GitHub Repo </a>
+                  <a href="https://ancapuscasu.github.io/myFlix-Angular-client" class="" target="_blank">Live Link</a>
+                </div>
+              </div>
+
+
             </div>
             <a class="carousel-control-prev" data-target="#carouselExampleIndicators" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -244,17 +294,19 @@
     
               <div class="col-xs-12 ">
     
-                  <form id="contact-form" name="myForm" class="form" action="https://formsubmit.co/ancaa.puscasu@gmail.com" onsubmit="return validateForm()" method="POST" role="form">
+                  <form id="contact-form" name="myForm" class="form" action="https://formsubmit.co/9db73a02ace228ad2199b53a99f2f61c" onsubmit="validateForm()" method="POST" role="form">
                     <input type="text" name="_honey" style="display:none">
                     <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://ancapuscasu.web.app/thankyou.html">
+                    <input type="hidden" name="_subject" value="You received a new message from your portfolio">
                       <div class="form-group">
                           <label class="form-label" id="nameLabel" for="name"></label>
-                          <input type="text" class="form-control" id="name" name="name" placeholder="Your name" tabindex="1">
+                          <input type="text" class="form-control" id="name" name="name" placeholder="Your name" tabindex="1" required>
                       </div>
     
                       <div class="form-group">
                           <label class="form-label" id="emailLabel" for="email"></label>
-                          <input type="email" novalidate  class="form-control" id="email" name="email" placeholder="Your Email" tabindex="2">
+                          <input type="email" novalidate class="form-control" id="email" name="email" placeholder="Your Email" tabindex="2" required>
                       </div>
     
                       <div class="form-group">
@@ -287,6 +339,12 @@
           </a>
           <a href="https://www.linkedin.com/in/anca-puscasu-8a977990/" target="_blank" aria-label="Visit me on LinkedIn">
                 <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+          </a>
+          <a href="https://twitter.com/ancapuscasu_" target="_blank" aria-label="Visit me on Twitter">
+            <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+          </a>
+          <a href="https://medium.com/@ancaa.puscasu" target="_blank" aria-label="Visit me on Medium">
+            <i class="fa-brands fa-medium fa-2x" aria-hidden="true"></i> 
           </a>
         </div>
       </div>

@@ -577,3 +577,80 @@ h2.contact-form__title {
         font-size: 0.6rem;
     }
 }
+
+
+
+/************************************** thank you page ***************************************/
+.back-btn {
+    text-decoration: none;
+    color: black;
+    margin-left: 1.5rem;
+    text-transform: uppercase;
+}
+
+.underlined {
+    color: black;
+    flex: 1;
+    font-size: 1.2rem;
+    line-height: 3;
+    text-decoration: none;
+    background-image: linear-gradient(to right, #ff66c4 0, #ff66c4 100%);
+    background-position: 0 1.2em;
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: background .5s;
+}
+.underlined:hover {
+    background-size: 100% 100%;
+}
+
+.underlined-thick {
+    background-position: 0 -0.3em;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    margin-right: 5px;
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.thanks-background {
+    width: calc(100vw - (100vw - 100%));
+    height:100vh;
+    background: linear-gradient(-45deg, #ee7752, #e7dc3c, #23a6d5);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+.thanks-wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.thanks-title {
+    font-size: 6rem;
+    margin: 0;
+}
+
+.thanks-subtitle {
+    font-size: 1.4rem;
+}
+
+.thanks-container {
+    border: 5px solid black;
+    padding: 2.5rem;
+    padding-left: 0.8rem;
+}
