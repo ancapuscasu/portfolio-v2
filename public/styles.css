@@ -423,9 +423,6 @@ a.btn-mod {
   }
 }
 
-@media screen and (max-width: 450px) {
-
-
 @media screen and (max-width: 700px) {
   .carousel.slide {
     padding: 0 6vh 15vh;
@@ -442,6 +439,12 @@ a.btn-mod {
 
   .row.contact-form {
     padding: 0 3rem 3rem;
+  }
+  section {
+    padding: 50px 0;
+  }
+  .project__container {
+    margin-top: 4rem;
   }
 }
 
